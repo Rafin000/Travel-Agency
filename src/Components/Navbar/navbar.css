@@ -35,6 +35,29 @@
   color: var(--PrimaryColor);
   transform: translateY(5px);
 }
+.header .closeNavbar {
+  display: none;
+}
+.header .toggleNavbar {
+  display: none;
+}
+.header .navLists {
+  justify-content: space-between;
+  align-items: center;
+  width: 200%;
+  margin: auto;
+  position: relative;
+  right: 50%;
+  transform: translate(-30%);
+}
+.header .navLists .navItem .navLink {
+  color: var(--textColor);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.header .navLists .navItem .navLink:hover {
+  color: var(--PrimaryColor);
+}
 @media screen and (max-width: 780px) {
   .header .navBar {
     position: absolute;
@@ -57,6 +80,8 @@
     width: 100%;
     margin: auto;
     padding: 0.5rem 0;
+    right: 0%;
+    transform: translate(0%);
   }
   .header .navBar .navLists .navItem {
     padding: 0.5rem 0;
@@ -77,6 +102,7 @@
     color: var(--whiteColor);
   }
   .header .navBar .closeNavbar {
+    display: flex;
     position: absolute;
     top: 1rem;
     right: 1.5rem;
@@ -88,11 +114,14 @@
   .header .activeNavbar {
     top: 7rem;
   }
-}
-.header .toggleNavbar .icon {
-  font-size: 25px;
-  color: var(--PrimaryColor);
-}
-.header .toggleNavbar .icon:hover {
-  color: var(--SecondaryColor);
+  .header .toggleNavbar {
+    display: flex;
+  }
+  .header .toggleNavbar .icon {
+    font-size: 25px;
+    color: var(--PrimaryColor);
+  }
+  .header .toggleNavbar .icon:hover {
+    color: var(--SecondaryColor);
+  }
 }/*# sourceMappingURL=navbar.css.map */
