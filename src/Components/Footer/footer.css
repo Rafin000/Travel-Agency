@@ -1,1 +1,208 @@
-/*# sourceMappingURL=footer.css.map */
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --CardBG: rgb(225, 225, 235);
+}
+
+.footer {
+  width: 100%;
+  position: relative;
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.footer .videoDiv {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: red;
+}
+.footer .videoDiv video {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.footer .videoDiv::after {
+  content: "";
+  position: absolute;
+  background: rgba(10, 84, 107, 0.307);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  mix-blend-mode: multiply;
+}
+.footer .seeContent {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 2rem initial;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  z-index: 100;
+  row-gap: 2rem;
+}
+.footer .seeContent .contactDiv {
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer .seeContent .contactDiv .text small {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--whiteColor);
+}
+.footer .seeContent .contactDiv .text h2 {
+  color: var(--whiteColor);
+  font-size: 1.8rem;
+}
+.footer .seeContent .contactDiv .inputDiv {
+  width: 100%;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.footer .seeContent .contactDiv .inputDiv input {
+  width: 100%;
+  padding: 0.5rem 0.6rem;
+  border-radius: 2rem;
+  border: 1px solid var(--whiteColor);
+  outline: none;
+  background: transparent;
+  color: var(--whiteColor);
+}
+.footer .seeContent .contactDiv .inputDiv input::-moz-placeholder {
+  color: var(--whiteColor);
+  opacity: 0.5;
+}
+.footer .seeContent .contactDiv .inputDiv input::placeholder {
+  color: var(--whiteColor);
+  opacity: 0.5;
+}
+.footer .seeContent .contactDiv .inputDiv .btn {
+  width: 100%;
+  justify-content: center;
+  color: var(--whiteColor);
+  font-weight: 500;
+  gap: 5rem;
+}
+.footer .seeContent .contactDiv .inputDiv .btn .icon {
+  font-size: 18px;
+}
+.footer .seeContent .footerCard {
+  position: relative;
+  padding: 1rem 1rem 4rem;
+  gap: 2rem;
+  border-radius: 1rem;
+  background: var(--bodyColor);
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.footer .seeContent .footerCard .footerIntro {
+  flex-basis: 50%;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+.footer .seeContent .footerCard .logoDiv .logo {
+  color: var(--blackColor);
+  font-weight: 600;
+}
+.footer .seeContent .footerCard .logoDiv .logo .icon {
+  font-size: 25px;
+  color: var(--PrimaryColor);
+  margin-right: 10px;
+}
+.footer .seeContent .footerCard .footerParagraph {
+  font-size: 13px;
+  color: var(--textColor);
+}
+.footer .seeContent .footerCard .footerSocials {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+.footer .seeContent .footerCard .footerSocials .icon {
+  color: var(--blackColor);
+  font-size: 30px;
+}
+.footer .seeContent .footerCard .footerSocials .icon:hover {
+  color: var(--PrimaryColor);
+}
+.footer .seeContent .footerCard .footerLinks {
+  flex-basis: 50%;
+  width: 100%;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+}
+.footer .seeContent .footerCard .footerLinks .linkGroup .groupTitle {
+  display: block;
+  font-weight: 600;
+  color: var(--blackColor);
+  margin-bottom: 0.5rem;
+}
+.footer .seeContent .footerCard .footerLinks .linkGroup .footerList {
+  font-size: 15px;
+  color: var(--textColor);
+  transition: 0.3s ease-in-out;
+}
+.footer .seeContent .footerCard .footerLinks .linkGroup .footerList .icon {
+  font-size: 15px;
+  color: var(--greyText);
+}
+.footer .seeContent .footerCard .footerLinks .linkGroup .footerList:hover {
+  color: var(--PrimaryColor);
+  transform: translateX(7px);
+}
+.footer .seeContent .footerCard .footerLinks .linkGroup .footerList:hover .icon {
+  color: var(--SecondaryColor);
+}
+.footer .seeContent .footerCard .footerDiv {
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--SecondaryColor);
+  padding: 0.5rem 2rem;
+}
+.footer .seeContent .footerCard .footerDiv small {
+  font-size: 10px;
+  color: var(--whiteColor);
+}
+@media screen and (max-width: 780px) {
+  .footer .footerSocials {
+    -moz-column-gap: 0.5rem;
+         column-gap: 0.5rem;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .footer .footerSocials .icon {
+    color: var(--blackColor);
+    font-size: 20px;
+  }
+  .footer .footerSocials .icon:hover {
+    color: var(--PrimaryColor);
+  }
+}/*# sourceMappingURL=footer.css.map */
